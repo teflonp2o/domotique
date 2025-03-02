@@ -22,15 +22,18 @@ struct Remote
 struct SomfyController
 {
   int appVersion;
-  Remote remotes[4];
+  Remote remotes[7];
 };
 
 SomfyController somfyControllers;
-Remote newRemotes [4] = {
-  {0x123456, 0},
-  {0x123457, 0},
-  {0x123458, 0},
-  {0x123459, 0}
+Remote newRemotes [7] = {
+  {0x123450, 0},
+  {0x123451, 0},
+  {0x123452, 0},
+  {0x123453, 0},
+  {0x123454, 0},
+  {0x123455, 0},
+  {0x123456, 0}
 };
 
 void BuildFrame(unsigned long remoteID, unsigned int rollingCode, byte *frame, byte button);
